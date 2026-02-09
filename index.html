@@ -169,6 +169,7 @@ yesBtn.addEventListener("click", () => {
   const yesSound = document.getElementById("yesSound");
   const bgMusic = document.getElementById("bgMusic");
 
+  yesSound.volume = 0.25;
   yesSound.currentTime = 0;
   yesSound.play();
 
@@ -178,9 +179,9 @@ yesBtn.addEventListener("click", () => {
 
   let vol = 0;
   const fade = setInterval(() => {
-    vol += 0.05;
+    vol += 0.005;
     bgMusic.volume = Math.min(vol, 0.5);
-    if (vol >= 0.5) clearInterval(fade);
+    if (vol >= 0.25) clearInterval(fade);
   }, 200);
 
   bgMusic.ontimeupdate = () => {
@@ -243,6 +244,7 @@ yesBtn.addEventListener("click", () => {
 
 </body>
 </html>
+
 
 
 
