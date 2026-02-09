@@ -17,8 +17,7 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     text-align: center;
     padding: 20px;
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow: hidden;
     background: linear-gradient(270deg, #ffe6eb, #ffd6e0, #ffb3c6, #ffe6eb);
     background-size: 800% 800%;
     animation: gradientShift 20s ease infinite;
@@ -179,8 +178,8 @@ yesBtn.addEventListener("click", () => {
 
     const message = document.createElement('div');
     message.innerHTML = `
-      <h1 style="font-size:2.5rem; margin:0;">YAY 💕</h1>
-      <p style="font-size:1.5rem;">I LOVE YOU BABY! 🥰🌹</p>
+      <h1 style="font-size:5rem; margin:0;">YAY 💕</h1>
+      <p style="font-size:2.5rem;">I LOVE YOU BABY! 🥰🌹</p>
     `;
     message.style.display = 'flex';
     message.style.flexDirection = 'column';
@@ -217,4 +216,5 @@ yesBtn.addEventListener("click", () => {
 
 </body>
 </html>
+
 
