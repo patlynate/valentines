@@ -179,7 +179,7 @@ yesBtn.addEventListener("click", () => {
 
   let vol = 0;
   const fade = setInterval(() => {
-    vol += 0.002;
+    vol += 0.025;
     bgMusic.volume = Math.min(vol, 0.1);
     if (vol >= 0.1) clearInterval(fade);
   }, 200);
@@ -244,6 +244,7 @@ yesBtn.addEventListener("click", () => {
 
 </body>
 </html>
+
 
 
 
